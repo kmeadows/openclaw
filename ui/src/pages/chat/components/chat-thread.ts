@@ -1090,9 +1090,12 @@ function latestTranscriptAnnouncement(
   return null;
 }
 
-function chatRenderItemGuardDependencies(item: ChatRenderItem): readonly unknown[] {
+function chatRenderItemGuardDependencies(
+  item: ChatRenderItem,
+  runOutputTokens: number | null | undefined,
+): readonly unknown[] {
   if (item.kind === "stream-run") {
-    return [item.key, ...item.parts];
+    return [item.key, ...item.parts, runOutputTokens];
   }
   if (item.kind === "work-group") {
     return [item.key, item.durationMs, item.hasError, ...item.groups];
@@ -1119,10 +1122,15 @@ function trackTranscriptRenderDependencies(
   return dependencies;
 }
 
-function guardChatRenderItems(state: ChatThreadState, render: (item: ChatRenderItem) => unknown) {
+function guardChatRenderItems(
+  state: ChatThreadState,
+  runOutputTokens: number | null | undefined,
+  render: (item: ChatRenderItem) => unknown,
+) {
   return (item: ChatRenderItem) =>
-    guard([...chatRenderItemGuardDependencies(item), state.transcriptRenderContext], () =>
-      render(item),
+    guard(
+      [...chatRenderItemGuardDependencies(item, runOutputTokens), state.transcriptRenderContext],
+      () => render(item),
     );
 }
 
@@ -1166,9 +1174,7 @@ function renderChatThreadContents(
   const chatItems = buildCachedChatItems({
     paneId: props.paneId,
     sessionKey: props.sessionKey,
-    runId:
-      props.sessions?.sessions.find((row) => areUiSessionKeysEquivalent(row.key, props.sessionKey))
-        ?.activeRunIds?.[0] ?? null,
+    runId: activeSession?.activeRunIds?.[0] ?? null,
     locale,
     messages: props.messages,
     toolMessages: props.toolMessages,
@@ -1179,7 +1185,6 @@ function renderChatThreadContents(
     showToolCalls: props.showToolCalls,
     persistCommentary: props.persistCommentary,
     runWorking: Boolean(props.runWorking),
-    waitingApproval: Boolean(props.waitingApproval),
     runActive: Boolean(props.runActive),
     planStatus: props.planStatus,
     questionPrompts: props.questionPrompts,
@@ -1289,7 +1294,7 @@ function renderChatThreadContents(
       rewindDisabled: Boolean(props.runActive || props.runWorking),
     });
   };
-  const renderItem = guardChatRenderItems(state, (item) => {
+  const renderItem = guardChatRenderItems(state, props.runOutputTokens, (item) => {
     if (item.kind === "divider") {
       return renderChatDivider(item, props.onOpenSessionCheckpoints);
     }
