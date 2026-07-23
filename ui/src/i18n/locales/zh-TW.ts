@@ -649,6 +649,8 @@ export const zh_TW: TranslationMap = {
     openWorkboardCard: "開啟 Workboard 卡片",
     dashboardAvailable: "儀表板可用",
     approvalNeeded: "需要核准",
+    queuedMessage: "{count} 則訊息已排入傳送佇列",
+    queuedMessages: "{count} 則訊息已排入傳送佇列",
     noSessions: "找不到工作階段。",
     noActiveSessions: "沒有作用中的討論串。",
     noArchivedSessions: "沒有已封存的工作階段。",
@@ -2959,6 +2961,7 @@ export const zh_TW: TranslationMap = {
     eventStale: "過期工作階段",
   },
   connection: {
+    queuedCount: "{count} 則排入佇列",
     reconnecting: "正在重新連線…",
     retryNow: "立即重試",
     access: {
@@ -3618,6 +3621,15 @@ export const zh_TW: TranslationMap = {
   },
   login: {
     subtitle: "閘道儀表板",
+    deviceAuthMigration: {
+      banner: "此瀏覽器在更新後仍需要進行一次性裝置核准。",
+      action: "保護此瀏覽器",
+      secureContextRequired:
+        "此舊版瀏覽器暫時仍可使用。請透過 HTTPS 或 localhost 重新開啟，以使用裝置身分進行保護。",
+      pendingUnavailable: "瀏覽器配對請求尚未準備就緒。請稍後重試。",
+      loadFailed: "無法載入此瀏覽器的配對請求：{error}",
+      approvalFailed: "無法保護此瀏覽器：{error}",
+    },
     passwordPlaceholder: "可選",
     showToken: "顯示權杖",
     hideToken: "隱藏權杖",
@@ -3709,6 +3721,19 @@ export const zh_TW: TranslationMap = {
     },
     outputTokens: "{count} 個輸出 token",
     archivedSessionDisabled: "還原此工作階段以傳送訊息。",
+    sessionSharing: {
+      menu: "討論串分享",
+      current: "討論串可見度：{visibility}",
+      visibility: "可見度",
+      shared: "已分享",
+      readOnly: "唯讀",
+      suggest: "建議",
+      draft: "草稿",
+      members: "成員",
+      selected: "成員",
+      noPeople: "找不到已配對的人員。",
+      readOnlyNotice: "只有討論串擁有者和成員可以在此討論串中操作。",
+    },
     loadOlder: "載入較早內容",
     sessionHeader: {
       renameTooltip: "重新命名工作階段",
@@ -4009,6 +4034,7 @@ export const zh_TW: TranslationMap = {
       openInCanvas: "在畫布中開啟",
       reply: "回覆",
       replyToMessage: "回覆訊息",
+      replyingTo: "正在回覆 {name}",
       rewind: "倒回",
       rewindConfirm: "倒回到這則訊息之前嗎？",
       rewindToHere: "倒回到此處",
@@ -4106,6 +4132,7 @@ export const zh_TW: TranslationMap = {
       placeholderWithAttachments: "Add a message or paste more images...",
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint: "離線——訊息將被排入佇列，並在連線恢復時傳送。",
+      offlineQueuedHint: "離線 — 已排入 {count} 則；連線恢復後訊息將自動送出。",
       preparingModel: "正在準備模型...",
       responding: "{name} 正在回覆...",
       sendingMessage: "正在傳送訊息...",

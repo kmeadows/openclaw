@@ -680,6 +680,8 @@ export const es: TranslationMap = {
     openWorkboardCard: "Abrir tarjeta de Workboard",
     dashboardAvailable: "Panel disponible",
     approvalNeeded: "Se requiere aprobación",
+    queuedMessage: "{count} mensaje en cola para enviar",
+    queuedMessages: "{count} mensajes en cola para enviar",
     noSessions: "No se encontraron sesiones.",
     noActiveSessions: "No hay hilos activos.",
     noArchivedSessions: "No hay sesiones archivadas.",
@@ -3064,6 +3066,7 @@ export const es: TranslationMap = {
     eventStale: "Sesión obsoleta",
   },
   connection: {
+    queuedCount: "{count} en cola",
     reconnecting: "Reconectando…",
     retryNow: "Reintentar ahora",
     access: {
@@ -3740,6 +3743,17 @@ export const es: TranslationMap = {
   },
   login: {
     subtitle: "Panel de Gateway",
+    deviceAuthMigration: {
+      banner:
+        "Este navegador aún necesita una aprobación única del dispositivo tras la actualización.",
+      action: "Proteger este navegador",
+      secureContextRequired:
+        "Este navegador heredado sigue disponible temporalmente. Vuelve a abrirlo mediante HTTPS o localhost para protegerlo con la identidad del dispositivo.",
+      pendingUnavailable:
+        "La solicitud de emparejamiento del navegador aún no está disponible. Vuelve a intentarlo en un momento.",
+      loadFailed: "No se pudo cargar la solicitud de emparejamiento de este navegador: {error}",
+      approvalFailed: "No se pudo proteger este navegador: {error}",
+    },
     passwordPlaceholder: "opcional",
     showToken: "Mostrar token",
     hideToken: "Ocultar token",
@@ -3851,6 +3865,19 @@ export const es: TranslationMap = {
     },
     outputTokens: "{count} tokens de salida",
     archivedSessionDisabled: "Restaura esta sesión para enviar mensajes.",
+    sessionSharing: {
+      menu: "Uso compartido del hilo",
+      current: "Visibilidad del hilo: {visibility}",
+      visibility: "Visibilidad",
+      shared: "Compartido",
+      readOnly: "Solo lectura",
+      suggest: "Sugerir",
+      draft: "Borrador",
+      members: "Miembros",
+      selected: "Miembro",
+      noPeople: "No se encontraron personas emparejadas.",
+      readOnlyNotice: "Solo el propietario del hilo y los miembros pueden actuar en este hilo.",
+    },
     loadOlder: "Cargar anteriores",
     sessionHeader: {
       renameTooltip: "Cambiar nombre de la sesión",
@@ -4155,6 +4182,7 @@ export const es: TranslationMap = {
       openInCanvas: "Abrir en lienzo",
       reply: "Responder",
       replyToMessage: "Responder al mensaje",
+      replyingTo: "Respondiendo a {name}",
       rewind: "Rebobinar",
       rewindConfirm: "¿Rebobinar hasta antes de este mensaje?",
       rewindToHere: "Rebobinar hasta aquí",
@@ -4253,6 +4281,8 @@ export const es: TranslationMap = {
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint:
         "Sin conexión: los mensajes se pondrán en cola y se enviarán cuando vuelva la conexión.",
+      offlineQueuedHint:
+        "Sin conexión — {count} en cola; los mensajes se enviarán cuando se restablezca la conexión.",
       preparingModel: "Preparando modelo...",
       responding: "{name} está respondiendo...",
       sendingMessage: "Enviando mensaje...",

@@ -675,6 +675,8 @@ export const tr: TranslationMap = {
     openWorkboardCard: "Workboard kartını aç",
     dashboardAvailable: "Pano kullanılabilir",
     approvalNeeded: "Onay gerekli",
+    queuedMessage: "Gönderilmek üzere {count} mesaj kuyruğa alındı",
+    queuedMessages: "Gönderilmek üzere {count} mesaj kuyruğa alındı",
     noSessions: "Oturum bulunamadı.",
     noActiveSessions: "Etkin konu yok.",
     noArchivedSessions: "Arşivlenmiş oturum yok.",
@@ -3045,6 +3047,7 @@ export const tr: TranslationMap = {
     eventStale: "Eski oturum",
   },
   connection: {
+    queuedCount: "{count} kuyruğa alındı",
     reconnecting: "Yeniden bağlanıyor…",
     retryNow: "Şimdi yeniden dene",
     access: {
@@ -3716,6 +3719,16 @@ export const tr: TranslationMap = {
   },
   login: {
     subtitle: "Gateway Kontrol Paneli",
+    deviceAuthMigration: {
+      banner: "Bu tarayıcı, güncellemeden sonra tek seferlik cihaz onayına ihtiyaç duyuyor.",
+      action: "Bu tarayıcıyı güvence altına al",
+      secureContextRequired:
+        "Bu eski tarayıcı geçici olarak kullanılabilir durumda. Cihaz kimliğiyle güvence altına almak için HTTPS veya localhost üzerinden yeniden açın.",
+      pendingUnavailable:
+        "Tarayıcı eşleştirme isteği henüz kullanılabilir değil. Birazdan tekrar deneyin.",
+      loadFailed: "Bu tarayıcının eşleştirme isteği yüklenemedi: {error}",
+      approvalFailed: "Bu tarayıcı güvence altına alınamadı: {error}",
+    },
     passwordPlaceholder: "isteğe bağlı",
     showToken: "Tokenı göster",
     hideToken: "Token'ı gizle",
@@ -3827,6 +3840,19 @@ export const tr: TranslationMap = {
     },
     outputTokens: "{count} çıktı belirteci",
     archivedSessionDisabled: "Mesaj göndermek için bu oturumu geri yükleyin.",
+    sessionSharing: {
+      menu: "Konu paylaşımı",
+      current: "Konu görünürlüğü: {visibility}",
+      visibility: "Görünürlük",
+      shared: "Paylaşıldı",
+      readOnly: "Salt okunur",
+      suggest: "Öner",
+      draft: "Taslak",
+      members: "Üyeler",
+      selected: "Üye",
+      noPeople: "Eşleştirilmiş kişi bulunamadı.",
+      readOnlyNotice: "Bu konuda yalnızca konu sahibi ve üyeler işlem yapabilir.",
+    },
     loadOlder: "Daha eskileri yükle",
     sessionHeader: {
       renameTooltip: "Oturumu yeniden adlandır",
@@ -4129,6 +4155,7 @@ export const tr: TranslationMap = {
       openInCanvas: "Kanvasta aç",
       reply: "Yanıtla",
       replyToMessage: "Mesajı yanıtla",
+      replyingTo: "{name} kişisine yanıt veriliyor",
       rewind: "Geri sar",
       rewindConfirm: "Bu mesajdan öncesine geri sarılsın mı?",
       rewindToHere: "Buraya geri sar",
@@ -4227,6 +4254,8 @@ export const tr: TranslationMap = {
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint:
         "Çevrimdışı — mesajlar sıraya alınacak ve bağlantı geri geldiğinde gönderilecek.",
+      offlineQueuedHint:
+        "Çevrimdışı — {count} kuyruğa alındı; bağlantı geri geldiğinde mesajlar gönderilir.",
       preparingModel: "Model hazırlanıyor...",
       responding: "{name} yanıtlıyor...",
       sendingMessage: "Mesaj gönderiliyor...",

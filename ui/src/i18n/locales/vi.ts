@@ -675,6 +675,8 @@ export const vi: TranslationMap = {
     openWorkboardCard: "Mở thẻ Workboard",
     dashboardAvailable: "Bảng điều khiển khả dụng",
     approvalNeeded: "Cần phê duyệt",
+    queuedMessage: "{count} tin nhắn đang chờ gửi",
+    queuedMessages: "{count} tin nhắn đang chờ gửi",
     noSessions: "Không tìm thấy phiên nào.",
     noActiveSessions: "Không có luồng đang hoạt động.",
     noArchivedSessions: "Không có phiên đã lưu trữ.",
@@ -3034,6 +3036,7 @@ export const vi: TranslationMap = {
     eventStale: "Phiên đã cũ",
   },
   connection: {
+    queuedCount: "{count} đang chờ",
     reconnecting: "Đang kết nối lại…",
     retryNow: "Thử lại ngay",
     access: {
@@ -3702,6 +3705,16 @@ export const vi: TranslationMap = {
   },
   login: {
     subtitle: "Bảng điều khiển Gateway",
+    deviceAuthMigration: {
+      banner: "Trình duyệt này vẫn cần phê duyệt thiết bị một lần sau khi cập nhật.",
+      action: "Bảo mật trình duyệt này",
+      secureContextRequired:
+        "Trình duyệt cũ này vẫn tạm khả dụng. Mở lại qua HTTPS hoặc localhost để bảo mật bằng danh tính thiết bị.",
+      pendingUnavailable:
+        "Yêu cầu ghép nối trình duyệt chưa khả dụng. Vui lòng thử lại sau giây lát.",
+      loadFailed: "Không thể tải yêu cầu ghép nối của trình duyệt này: {error}",
+      approvalFailed: "Không thể bảo mật trình duyệt này: {error}",
+    },
     passwordPlaceholder: "tùy chọn",
     showToken: "Hiển thị token",
     hideToken: "Ẩn token",
@@ -3806,6 +3819,19 @@ export const vi: TranslationMap = {
     },
     outputTokens: "{count} token đầu ra",
     archivedSessionDisabled: "Khôi phục phiên này để gửi tin nhắn.",
+    sessionSharing: {
+      menu: "Chia sẻ luồng",
+      current: "Hiển thị luồng: {visibility}",
+      visibility: "Hiển thị",
+      shared: "Đã chia sẻ",
+      readOnly: "Chỉ đọc",
+      suggest: "Gợi ý",
+      draft: "Bản nháp",
+      members: "Thành viên",
+      selected: "Thành viên",
+      noPeople: "Không tìm thấy người đã ghép nối.",
+      readOnlyNotice: "Chỉ chủ sở hữu luồng và thành viên mới có thể thao tác trong luồng này.",
+    },
     loadOlder: "Tải mục cũ hơn",
     sessionHeader: {
       renameTooltip: "Đổi tên phiên",
@@ -4109,6 +4135,7 @@ export const vi: TranslationMap = {
       openInCanvas: "Mở trong canvas",
       reply: "Trả lời",
       replyToMessage: "Trả lời tin nhắn",
+      replyingTo: "Đang trả lời {name}",
       rewind: "Tua lại",
       rewindConfirm: "Tua lại về trước tin nhắn này?",
       rewindToHere: "Tua lại về đây",
@@ -4206,6 +4233,7 @@ export const vi: TranslationMap = {
       placeholderWithAttachments: "Add a message or paste more images...",
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint: "Ngoại tuyến — tin nhắn sẽ được xếp hàng và gửi khi kết nối trở lại.",
+      offlineQueuedHint: "Ngoại tuyến — {count} đang chờ; tin nhắn sẽ gửi khi kết nối trở lại.",
       preparingModel: "Đang chuẩn bị mô hình...",
       responding: "{name} đang phản hồi...",
       sendingMessage: "Đang gửi tin nhắn...",

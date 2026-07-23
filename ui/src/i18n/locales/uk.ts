@@ -678,6 +678,8 @@ export const uk: TranslationMap = {
     openWorkboardCard: "Відкрити картку Workboard",
     dashboardAvailable: "Панель доступна",
     approvalNeeded: "Потрібне схвалення",
+    queuedMessage: "{count} повідомлення в черзі на надсилання",
+    queuedMessages: "{count} повідомлень у черзі на надсилання",
     noSessions: "Сеансів не знайдено.",
     noActiveSessions: "Немає активних тем.",
     noArchivedSessions: "Немає заархівованих сесій.",
@@ -3043,6 +3045,7 @@ export const uk: TranslationMap = {
     eventStale: "Застарілий сеанс",
   },
   connection: {
+    queuedCount: "{count} у черзі",
     reconnecting: "Повторне підключення…",
     retryNow: "Повторити зараз",
     access: {
@@ -3710,6 +3713,15 @@ export const uk: TranslationMap = {
   },
   login: {
     subtitle: "Панель Gateway",
+    deviceAuthMigration: {
+      banner: "Цей браузер після оновлення все ще потребує одноразового схвалення пристрою.",
+      action: "Захистити цей браузер",
+      secureContextRequired:
+        "Цей застарілий браузер тимчасово залишається доступним. Відкрийте його знову через HTTPS або localhost, щоб захистити ідентифікацією пристрою.",
+      pendingUnavailable: "Запит на з'єднання браузера ще недоступний. Спробуйте за мить.",
+      loadFailed: "Не вдалося завантажити запит на з'єднання цього браузера: {error}",
+      approvalFailed: "Не вдалося захистити цей браузер: {error}",
+    },
     passwordPlaceholder: "необов’язково",
     showToken: "Показати токен",
     hideToken: "Приховати токен",
@@ -3819,6 +3831,19 @@ export const uk: TranslationMap = {
     },
     outputTokens: "{count} вихідних токенів",
     archivedSessionDisabled: "Відновіть цей сеанс, щоб надсилати повідомлення.",
+    sessionSharing: {
+      menu: "Спільний доступ до гілки",
+      current: "Видимість гілки: {visibility}",
+      visibility: "Видимість",
+      shared: "Спільна",
+      readOnly: "Лише для читання",
+      suggest: "Пропонувати",
+      draft: "Чернетка",
+      members: "Учасники",
+      selected: "Учасник",
+      noPeople: "Не знайдено з'єднаних людей.",
+      readOnlyNotice: "Лише власник гілки та учасники можуть діяти в цій гілці.",
+    },
     loadOlder: "Завантажити старіші",
     sessionHeader: {
       renameTooltip: "Перейменувати сеанс",
@@ -4121,6 +4146,7 @@ export const uk: TranslationMap = {
       openInCanvas: "Відкрити в полотні",
       reply: "Відповісти",
       replyToMessage: "Відповісти на повідомлення",
+      replyingTo: "Відповідь для {name}",
       rewind: "Перемотати назад",
       rewindConfirm: "Перемотати до моменту перед цим повідомленням?",
       rewindToHere: "Перемотати сюди",
@@ -4220,6 +4246,8 @@ export const uk: TranslationMap = {
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint:
         "Офлайн — повідомлення буде поставлено в чергу й надіслано після відновлення з'єднання.",
+      offlineQueuedHint:
+        "Офлайн — у черзі {count}; повідомлення надішлються після відновлення з'єднання.",
       preparingModel: "Підготовка моделі...",
       responding: "{name} відповідає...",
       sendingMessage: "Надсилання повідомлення...",

@@ -687,6 +687,8 @@ export const fr: TranslationMap = {
     openWorkboardCard: "Ouvrir la carte Workboard",
     dashboardAvailable: "Tableau de bord disponible",
     approvalNeeded: "Approbation requise",
+    queuedMessage: "{count} message en attente d'envoi",
+    queuedMessages: "{count} messages en attente d'envoi",
     noSessions: "Aucune session trouvée.",
     noActiveSessions: "Aucun fil actif.",
     noArchivedSessions: "Aucune session archivée.",
@@ -3092,6 +3094,7 @@ export const fr: TranslationMap = {
     eventStale: "Session inactive",
   },
   connection: {
+    queuedCount: "{count} en attente",
     reconnecting: "Reconnexion…",
     retryNow: "Réessayer maintenant",
     access: {
@@ -3771,6 +3774,17 @@ export const fr: TranslationMap = {
   },
   login: {
     subtitle: "Tableau de bord Gateway",
+    deviceAuthMigration: {
+      banner:
+        "Ce navigateur nécessite encore une approbation d'appareil unique après la mise à jour.",
+      action: "Sécuriser ce navigateur",
+      secureContextRequired:
+        "Ce navigateur hérité reste disponible temporairement. Rouvrez-le en HTTPS ou localhost pour le sécuriser avec une identité d'appareil.",
+      pendingUnavailable:
+        "La demande d'appairage du navigateur n'est pas encore disponible. Réessayez dans un instant.",
+      loadFailed: "Impossible de charger la demande d'appairage de ce navigateur : {error}",
+      approvalFailed: "Impossible de sécuriser ce navigateur : {error}",
+    },
     passwordPlaceholder: "facultatif",
     showToken: "Afficher le jeton",
     hideToken: "Masquer le jeton",
@@ -3886,6 +3900,19 @@ export const fr: TranslationMap = {
     },
     outputTokens: "{count} jetons de sortie",
     archivedSessionDisabled: "Restaurez cette session pour envoyer des messages.",
+    sessionSharing: {
+      menu: "Partage du fil",
+      current: "Visibilité du fil : {visibility}",
+      visibility: "Visibilité",
+      shared: "Partagé",
+      readOnly: "Lecture seule",
+      suggest: "Suggérer",
+      draft: "Brouillon",
+      members: "Membres",
+      selected: "Membre",
+      noPeople: "Aucune personne appairée trouvée.",
+      readOnlyNotice: "Seuls le propriétaire du fil et les membres peuvent agir dans ce fil.",
+    },
     loadOlder: "Charger les plus anciens",
     sessionHeader: {
       renameTooltip: "Renommer la session",
@@ -4192,6 +4219,7 @@ export const fr: TranslationMap = {
       openInCanvas: "Ouvrir dans le canevas",
       reply: "Répondre",
       replyToMessage: "Répondre au message",
+      replyingTo: "En réponse à {name}",
       rewind: "Revenir en arrière",
       rewindConfirm: "Revenir avant ce message ?",
       rewindToHere: "Revenir ici",
@@ -4290,6 +4318,8 @@ export const fr: TranslationMap = {
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint:
         "Hors ligne — les messages seront mis en file d'attente et envoyés au retour de la connexion.",
+      offlineQueuedHint:
+        "Hors ligne — {count} en attente ; les messages seront envoyés au retour de la connexion.",
       preparingModel: "Préparation du modèle...",
       responding: "{name} répond...",
       sendingMessage: "Envoi du message...",

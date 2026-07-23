@@ -672,6 +672,8 @@ export const fa: TranslationMap = {
     openWorkboardCard: "باز کردن کارت Workboard",
     dashboardAvailable: "داشبورد در دسترس است",
     approvalNeeded: "نیازمند تأیید",
+    queuedMessage: "{count} پیام در صف ارسال",
+    queuedMessages: "{count} پیام در صف ارسال",
     noSessions: "هیچ نشستی پیدا نشد.",
     noActiveSessions: "هیچ رشته فعالی نیست.",
     noArchivedSessions: "هیچ نشست بایگانی‌شده‌ای نیست.",
@@ -3023,6 +3025,7 @@ export const fa: TranslationMap = {
     eventStale: "نشست منقضی‌شده",
   },
   connection: {
+    queuedCount: "{count} در صف",
     reconnecting: "در حال اتصال مجدد…",
     retryNow: "اکنون دوباره تلاش کنید",
     access: {
@@ -3691,6 +3694,15 @@ export const fa: TranslationMap = {
   },
   login: {
     subtitle: "داشبورد Gateway",
+    deviceAuthMigration: {
+      banner: "این مرورگر پس از به‌روزرسانی همچنان به تأیید یک‌باره دستگاه نیاز دارد.",
+      action: "ایمن‌سازی این مرورگر",
+      secureContextRequired:
+        "این مرورگر قدیمی موقتاً در دسترس است. آن را از طریق HTTPS یا localhost دوباره باز کنید تا با هویت دستگاه ایمن شود.",
+      pendingUnavailable: "درخواست جفت‌سازی مرورگر هنوز در دسترس نیست. لحظه‌ای دیگر دوباره تلاش کنید.",
+      loadFailed: "بارگذاری درخواست جفت‌سازی این مرورگر ممکن نشد: {error}",
+      approvalFailed: "ایمن‌سازی این مرورگر ممکن نشد: {error}",
+    },
     passwordPlaceholder: "اختیاری",
     showToken: "نمایش توکن",
     hideToken: "پنهان کردن توکن",
@@ -3802,6 +3814,19 @@ export const fa: TranslationMap = {
     },
     outputTokens: "{count} توکن خروجی",
     archivedSessionDisabled: "برای ارسال پیام، این نشست را بازیابی کنید.",
+    sessionSharing: {
+      menu: "اشتراک‌گذاری گفتگو",
+      current: "دید گفتگو: {visibility}",
+      visibility: "دید",
+      shared: "اشتراک‌گذاری‌شده",
+      readOnly: "فقط‌خواندنی",
+      suggest: "پیشنهاد",
+      draft: "پیش‌نویس",
+      members: "اعضا",
+      selected: "عضو",
+      noPeople: "هیچ فرد جفت‌شده‌ای یافت نشد.",
+      readOnlyNotice: "فقط مالک گفتگو و اعضا می‌توانند در این گفتگو اقدام کنند.",
+    },
     loadOlder: "بارگیری قدیمی‌ترها",
     sessionHeader: {
       renameTooltip: "تغییر نام نشست",
@@ -4103,6 +4128,7 @@ export const fa: TranslationMap = {
       openInCanvas: "باز کردن در بوم",
       reply: "پاسخ",
       replyToMessage: "پاسخ به پیام",
+      replyingTo: "در حال پاسخ به {name}",
       rewind: "بازگشت",
       rewindConfirm: "بازگشت به قبل از این پیام؟",
       rewindToHere: "بازگشت به اینجا",
@@ -4200,6 +4226,7 @@ export const fa: TranslationMap = {
       placeholderWithAttachments: "Add a message or paste more images...",
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint: "آفلاین — پیام‌ها در صف قرار می‌گیرند و هنگام بازگشت اتصال ارسال می‌شوند.",
+      offlineQueuedHint: "آفلاین — {count} در صف؛ پیام‌ها هنگام بازگشت اتصال ارسال می‌شوند.",
       preparingModel: "در حال آماده‌سازی مدل...",
       responding: "{name} در حال پاسخ‌دهی است...",
       sendingMessage: "در حال ارسال پیام...",

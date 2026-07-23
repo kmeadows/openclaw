@@ -683,6 +683,8 @@ export const ja_JP: TranslationMap = {
     openWorkboardCard: "Workboardカードを開く",
     dashboardAvailable: "ダッシュボードが利用可能",
     approvalNeeded: "承認が必要",
+    queuedMessage: "{count} 件のメッセージが送信待ちです",
+    queuedMessages: "{count} 件のメッセージが送信待ちです",
     noSessions: "セッションが見つかりません。",
     noActiveSessions: "アクティブなスレッドはありません。",
     noArchivedSessions: "アーカイブされたセッションはありません。",
@@ -3046,6 +3048,7 @@ export const ja_JP: TranslationMap = {
     eventStale: "古いセッション",
   },
   connection: {
+    queuedCount: "{count} 件待機中",
     reconnecting: "再接続中…",
     retryNow: "今すぐ再試行",
     access: {
@@ -3716,6 +3719,16 @@ export const ja_JP: TranslationMap = {
   },
   login: {
     subtitle: "Gateway ダッシュボード",
+    deviceAuthMigration: {
+      banner: "アップデート後、このブラウザには一度だけデバイス承認が必要です。",
+      action: "このブラウザを保護する",
+      secureContextRequired:
+        "このレガシーブラウザは一時的に利用できます。HTTPS または localhost で開き直して、デバイスIDで保護してください。",
+      pendingUnavailable:
+        "ブラウザのペアリング要求はまだ利用できません。しばらくしてから再試行してください。",
+      loadFailed: "このブラウザのペアリング要求を読み込めませんでした：{error}",
+      approvalFailed: "このブラウザを保護できませんでした：{error}",
+    },
     passwordPlaceholder: "任意",
     showToken: "トークンを表示",
     hideToken: "トークンを非表示",
@@ -3826,6 +3839,19 @@ export const ja_JP: TranslationMap = {
     },
     outputTokens: "{count} 出力トークン",
     archivedSessionDisabled: "メッセージを送信するには、このセッションを復元してください。",
+    sessionSharing: {
+      menu: "スレッドの共有",
+      current: "スレッドの公開範囲：{visibility}",
+      visibility: "公開範囲",
+      shared: "共有",
+      readOnly: "読み取り専用",
+      suggest: "提案",
+      draft: "下書き",
+      members: "メンバー",
+      selected: "メンバー",
+      noPeople: "ペアリングされた相手が見つかりません。",
+      readOnlyNotice: "このスレッドで操作できるのは、スレッドの所有者とメンバーのみです。",
+    },
     loadOlder: "以前の項目を読み込む",
     sessionHeader: {
       renameTooltip: "セッション名を変更",
@@ -4129,6 +4155,7 @@ export const ja_JP: TranslationMap = {
       openInCanvas: "キャンバスで開く",
       reply: "返信",
       replyToMessage: "メッセージに返信",
+      replyingTo: "{name} に返信中",
       rewind: "巻き戻し",
       rewindConfirm: "このメッセージの前まで巻き戻しますか？",
       rewindToHere: "ここまで巻き戻し",
@@ -4226,6 +4253,8 @@ export const ja_JP: TranslationMap = {
       placeholderWithAttachments: "Add a message or paste more images...",
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint: "オフライン — メッセージはキューに入り、接続が回復したときに送信されます。",
+      offlineQueuedHint:
+        "オフライン — {count}件を保留中。接続が復旧するとメッセージが送信されます。",
       preparingModel: "モデルを準備中...",
       responding: "{name}が応答中...",
       sendingMessage: "メッセージを送信中...",

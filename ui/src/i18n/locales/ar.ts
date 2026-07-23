@@ -665,6 +665,8 @@ export const ar: TranslationMap = {
     openWorkboardCard: "فتح بطاقة Workboard",
     dashboardAvailable: "لوحة المعلومات متاحة",
     approvalNeeded: "الموافقة مطلوبة",
+    queuedMessage: "{count} رسالة في قائمة الانتظار للإرسال",
+    queuedMessages: "{count} رسائل في قائمة الانتظار للإرسال",
     noSessions: "لم يتم العثور على جلسات.",
     noActiveSessions: "لا توجد محادثات نشطة.",
     noArchivedSessions: "لا توجد جلسات مؤرشفة.",
@@ -2998,6 +3000,7 @@ export const ar: TranslationMap = {
     eventStale: "جلسة قديمة",
   },
   connection: {
+    queuedCount: "{count} في قائمة الانتظار",
     reconnecting: "جارٍ إعادة الاتصال…",
     retryNow: "إعادة المحاولة الآن",
     access: {
@@ -3663,6 +3666,15 @@ export const ar: TranslationMap = {
   },
   login: {
     subtitle: "لوحة معلومات Gateway",
+    deviceAuthMigration: {
+      banner: "لا يزال هذا المتصفح يحتاج إلى موافقة الجهاز لمرة واحدة بعد التحديث.",
+      action: "تأمين هذا المتصفح",
+      secureContextRequired:
+        "يظل هذا المتصفح القديم متاحًا مؤقتًا. أعد فتحه عبر HTTPS أو localhost لتأمينه بهوية الجهاز.",
+      pendingUnavailable: "طلب إقران المتصفح غير متاح بعد. أعد المحاولة بعد لحظات.",
+      loadFailed: "تعذّر تحميل طلب إقران هذا المتصفح: {error}",
+      approvalFailed: "تعذّر تأمين هذا المتصفح: {error}",
+    },
     passwordPlaceholder: "اختياري",
     showToken: "إظهار الرمز",
     hideToken: "إخفاء الرمز",
@@ -3765,6 +3777,19 @@ export const ar: TranslationMap = {
     },
     outputTokens: "{count} رمز إخراج",
     archivedSessionDisabled: "استعِد هذه الجلسة لإرسال الرسائل.",
+    sessionSharing: {
+      menu: "مشاركة المحادثة",
+      current: "رؤية المحادثة: {visibility}",
+      visibility: "الرؤية",
+      shared: "مُشارَك",
+      readOnly: "للقراءة فقط",
+      suggest: "اقتراح",
+      draft: "مسودة",
+      members: "الأعضاء",
+      selected: "عضو",
+      noPeople: "لم يُعثر على أشخاص مقترنين.",
+      readOnlyNotice: "يمكن فقط لمالك المحادثة والأعضاء التصرف في هذه المحادثة.",
+    },
     loadOlder: "تحميل الأقدم",
     sessionHeader: {
       renameTooltip: "إعادة تسمية الجلسة",
@@ -4067,6 +4092,7 @@ export const ar: TranslationMap = {
       openInCanvas: "فتح في اللوحة",
       reply: "رد",
       replyToMessage: "الرد على الرسالة",
+      replyingTo: "الرد على {name}",
       rewind: "إرجاع",
       rewindConfirm: "الإرجاع إلى ما قبل هذه الرسالة؟",
       rewindToHere: "الإرجاع إلى هنا",
@@ -4164,6 +4190,7 @@ export const ar: TranslationMap = {
       placeholderWithAttachments: "Add a message or paste more images...",
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint: "غير متصل — سيتم وضع الرسائل في قائمة الانتظار وإرسالها عند عودة الاتصال.",
+      offlineQueuedHint: "غير متصل — {count} في قائمة الانتظار؛ تُرسل الرسائل عند عودة الاتصال.",
       preparingModel: "جارٍ إعداد النموذج...",
       responding: "{name} يرد...",
       sendingMessage: "جارٍ إرسال الرسالة...",

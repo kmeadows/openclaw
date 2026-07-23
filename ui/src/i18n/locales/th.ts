@@ -657,6 +657,8 @@ export const th: TranslationMap = {
     openWorkboardCard: "เปิดการ์ด Workboard",
     dashboardAvailable: "มีแดชบอร์ดพร้อมใช้งาน",
     approvalNeeded: "ต้องการการอนุมัติ",
+    queuedMessage: "{count} ข้อความอยู่ในคิวเพื่อส่ง",
+    queuedMessages: "{count} ข้อความอยู่ในคิวเพื่อส่ง",
     noSessions: "ไม่พบเซสชัน",
     noActiveSessions: "ไม่มีเธรดที่ใช้งานอยู่",
     noArchivedSessions: "ไม่มีเซสชันที่จัดเก็บ",
@@ -2978,6 +2980,7 @@ export const th: TranslationMap = {
     eventStale: "เซสชันหมดอายุ",
   },
   connection: {
+    queuedCount: "{count} อยู่ในคิว",
     reconnecting: "กำลังเชื่อมต่อใหม่…",
     retryNow: "ลองอีกครั้งตอนนี้",
     access: {
@@ -3638,6 +3641,15 @@ export const th: TranslationMap = {
   },
   login: {
     subtitle: "Gateway Dashboard",
+    deviceAuthMigration: {
+      banner: "เบราว์เซอร์นี้ยังต้องได้รับการอนุมัติอุปกรณ์ครั้งเดียวหลังการอัปเดต",
+      action: "รักษาความปลอดภัยเบราว์เซอร์นี้",
+      secureContextRequired:
+        "เบราว์เซอร์รุ่นเก่านี้ยังใช้งานได้ชั่วคราว เปิดใหม่ผ่าน HTTPS หรือ localhost เพื่อรักษาความปลอดภัยด้วยข้อมูลระบุตัวตนของอุปกรณ์",
+      pendingUnavailable: "คำขอจับคู่เบราว์เซอร์ยังไม่พร้อมใช้งาน ลองใหม่อีกครั้งในอีกสักครู่",
+      loadFailed: "ไม่สามารถโหลดคำขอจับคู่ของเบราว์เซอร์นี้ได้: {error}",
+      approvalFailed: "ไม่สามารถรักษาความปลอดภัยเบราว์เซอร์นี้ได้: {error}",
+    },
     passwordPlaceholder: "ไม่บังคับ",
     showToken: "แสดงโทเค็น",
     hideToken: "ซ่อนโทเค็น",
@@ -3731,6 +3743,19 @@ export const th: TranslationMap = {
     },
     outputTokens: "{count} โทเค็นเอาต์พุต",
     archivedSessionDisabled: "กู้คืนเซสชันนี้เพื่อส่งข้อความ",
+    sessionSharing: {
+      menu: "การแชร์เธรด",
+      current: "การมองเห็นเธรด: {visibility}",
+      visibility: "การมองเห็น",
+      shared: "แชร์แล้ว",
+      readOnly: "อ่านอย่างเดียว",
+      suggest: "แนะนำ",
+      draft: "ฉบับร่าง",
+      members: "สมาชิก",
+      selected: "สมาชิก",
+      noPeople: "ไม่พบผู้ที่จับคู่ไว้",
+      readOnlyNotice: "เฉพาะเจ้าของเธรดและสมาชิกเท่านั้นที่สามารถดำเนินการในเธรดนี้ได้",
+    },
     loadOlder: "โหลดรายการก่อนหน้า",
     sessionHeader: {
       renameTooltip: "เปลี่ยนชื่อเซสชัน",
@@ -4032,6 +4057,7 @@ export const th: TranslationMap = {
       openInCanvas: "เปิดใน Canvas",
       reply: "ตอบกลับ",
       replyToMessage: "ตอบกลับข้อความ",
+      replyingTo: "กำลังตอบกลับ {name}",
       rewind: "ย้อนกลับ",
       rewindConfirm: "ย้อนกลับไปก่อนข้อความนี้หรือไม่",
       rewindToHere: "ย้อนกลับมาที่จุดนี้",
@@ -4129,6 +4155,7 @@ export const th: TranslationMap = {
       placeholderWithAttachments: "Add a message or paste more images...",
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint: "ออฟไลน์ — ข้อความจะถูกจัดคิวและส่งเมื่อการเชื่อมต่อกลับมา",
+      offlineQueuedHint: "ออฟไลน์ — เข้าคิว {count} รายการ; ข้อความจะส่งเมื่อการเชื่อมต่อกลับมา",
       preparingModel: "กำลังเตรียมโมเดล...",
       responding: "{name} กำลังตอบกลับ...",
       sendingMessage: "กำลังส่งข้อความ...",

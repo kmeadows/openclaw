@@ -678,6 +678,8 @@ export const pt_BR: TranslationMap = {
     openWorkboardCard: "Abrir cartão do Workboard",
     dashboardAvailable: "Painel disponível",
     approvalNeeded: "Aprovação necessária",
+    queuedMessage: "{count} mensagem na fila para envio",
+    queuedMessages: "{count} mensagens na fila para envio",
     noSessions: "Nenhuma sessão encontrada.",
     noActiveSessions: "Nenhum thread ativo.",
     noArchivedSessions: "Nenhuma sessão arquivada.",
@@ -3045,6 +3047,7 @@ export const pt_BR: TranslationMap = {
     eventStale: "Sessão obsoleta",
   },
   connection: {
+    queuedCount: "{count} na fila",
     reconnecting: "Reconectando…",
     retryNow: "Tentar novamente agora",
     access: {
@@ -3718,6 +3721,16 @@ export const pt_BR: TranslationMap = {
   },
   login: {
     subtitle: "Painel do Gateway",
+    deviceAuthMigration: {
+      banner: "Este navegador ainda precisa de aprovação única do dispositivo após a atualização.",
+      action: "Proteger este navegador",
+      secureContextRequired:
+        "Este navegador antigo permanece disponível temporariamente. Reabra-o via HTTPS ou localhost para protegê-lo com a identidade do dispositivo.",
+      pendingUnavailable:
+        "A solicitação de pareamento do navegador ainda não está disponível. Tente novamente em instantes.",
+      loadFailed: "Não foi possível carregar a solicitação de pareamento deste navegador: {error}",
+      approvalFailed: "Não foi possível proteger este navegador: {error}",
+    },
     passwordPlaceholder: "opcional",
     showToken: "Mostrar token",
     hideToken: "Ocultar token",
@@ -3826,6 +3839,19 @@ export const pt_BR: TranslationMap = {
     },
     outputTokens: "{count} tokens de saída",
     archivedSessionDisabled: "Restaure esta sessão para enviar mensagens.",
+    sessionSharing: {
+      menu: "Compartilhamento de conversa",
+      current: "Visibilidade da conversa: {visibility}",
+      visibility: "Visibilidade",
+      shared: "Compartilhada",
+      readOnly: "Somente leitura",
+      suggest: "Sugerir",
+      draft: "Rascunho",
+      members: "Membros",
+      selected: "Membro",
+      noPeople: "Nenhuma pessoa pareada encontrada.",
+      readOnlyNotice: "Somente o proprietário da conversa e os membros podem agir nesta conversa.",
+    },
     loadOlder: "Carregar anteriores",
     sessionHeader: {
       renameTooltip: "Renomear sessão",
@@ -4130,6 +4156,7 @@ export const pt_BR: TranslationMap = {
       openInCanvas: "Abrir no canvas",
       reply: "Responder",
       replyToMessage: "Responder à mensagem",
+      replyingTo: "Respondendo a {name}",
       rewind: "Retroceder",
       rewindConfirm: "Retroceder para antes desta mensagem?",
       rewindToHere: "Retroceder até aqui",
@@ -4228,6 +4255,8 @@ export const pt_BR: TranslationMap = {
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint:
         "Offline — as mensagens serão enfileiradas e enviadas quando a conexão retornar.",
+      offlineQueuedHint:
+        "Offline — {count} na fila; as mensagens serão enviadas quando a conexão retornar.",
       preparingModel: "Preparando modelo...",
       responding: "{name} está respondendo...",
       sendingMessage: "Enviando mensagem...",

@@ -677,6 +677,8 @@ export const ru: TranslationMap = {
     openWorkboardCard: "Открыть карточку Workboard",
     dashboardAvailable: "Панель доступна",
     approvalNeeded: "Требуется подтверждение",
+    queuedMessage: "{count} сообщение в очереди на отправку",
+    queuedMessages: "{count} сообщений в очереди на отправку",
     noSessions: "Сеансы не найдены.",
     noActiveSessions: "Нет активных тредов.",
     noArchivedSessions: "Нет архивных сессий.",
@@ -3051,6 +3053,7 @@ export const ru: TranslationMap = {
     eventStale: "Устаревший сеанс",
   },
   connection: {
+    queuedCount: "{count} в очереди",
     reconnecting: "Повторное подключение…",
     retryNow: "Повторить сейчас",
     access: {
@@ -3727,6 +3730,17 @@ export const ru: TranslationMap = {
   },
   login: {
     subtitle: "Панель управления Gateway",
+    deviceAuthMigration: {
+      banner:
+        "Этому браузеру всё ещё требуется однократное подтверждение устройства после обновления.",
+      action: "Защитить этот браузер",
+      secureContextRequired:
+        "Этот устаревший браузер временно остаётся доступным. Откройте его снова через HTTPS или localhost, чтобы защитить его с помощью идентификации устройства.",
+      pendingUnavailable:
+        "Запрос на сопряжение браузера пока недоступен. Повторите попытку через мгновение.",
+      loadFailed: "Не удалось загрузить запрос на сопряжение этого браузера: {error}",
+      approvalFailed: "Не удалось защитить этот браузер: {error}",
+    },
     passwordPlaceholder: "необязательно",
     showToken: "Показать токен",
     hideToken: "Скрыть токен",
@@ -3837,6 +3851,19 @@ export const ru: TranslationMap = {
     },
     outputTokens: "{count} выходных токенов",
     archivedSessionDisabled: "Восстановите этот сеанс, чтобы отправлять сообщения.",
+    sessionSharing: {
+      menu: "Общий доступ к треду",
+      current: "Видимость треда: {visibility}",
+      visibility: "Видимость",
+      shared: "Общий",
+      readOnly: "Только для чтения",
+      suggest: "Предложить",
+      draft: "Черновик",
+      members: "Участники",
+      selected: "Участник",
+      noPeople: "Сопряжённые пользователи не найдены.",
+      readOnlyNotice: "Только владелец треда и участники могут выполнять действия в этом треде.",
+    },
     loadOlder: "Загрузить более ранние",
     sessionHeader: {
       renameTooltip: "Переименовать сеанс",
@@ -4141,6 +4168,7 @@ export const ru: TranslationMap = {
       openInCanvas: "Открыть в холсте",
       reply: "Ответить",
       replyToMessage: "Ответить на сообщение",
+      replyingTo: "Ответ пользователю {name}",
       rewind: "Перемотать",
       rewindConfirm: "Перемотать к состоянию до этого сообщения?",
       rewindToHere: "Перемотать сюда",
@@ -4239,6 +4267,8 @@ export const ru: TranslationMap = {
       placeholderDisconnected: "Подключитесь к шлюзу, чтобы начать общение...",
       offlineHint:
         "Не в сети — сообщения будут поставлены в очередь и отправлены при восстановлении соединения.",
+      offlineQueuedHint:
+        "Не в сети — {count} в очереди; сообщения будут отправлены при восстановлении соединения.",
       preparingModel: "Подготовка модели...",
       responding: "{name} отвечает...",
       sendingMessage: "Отправка сообщения...",

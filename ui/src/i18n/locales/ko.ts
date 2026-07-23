@@ -670,6 +670,8 @@ export const ko: TranslationMap = {
     openWorkboardCard: "Workboard 카드 열기",
     dashboardAvailable: "대시보드 사용 가능",
     approvalNeeded: "승인 필요",
+    queuedMessage: "{count}개 메시지 전송 대기 중",
+    queuedMessages: "{count}개 메시지 전송 대기 중",
     noSessions: "세션을 찾을 수 없습니다.",
     noActiveSessions: "활성 스레드가 없습니다.",
     noArchivedSessions: "보관된 세션이 없습니다.",
@@ -3012,6 +3014,7 @@ export const ko: TranslationMap = {
     eventStale: "오래된 세션",
   },
   connection: {
+    queuedCount: "{count}개 대기 중",
     reconnecting: "다시 연결 중…",
     retryNow: "지금 다시 시도",
     access: {
@@ -3676,6 +3679,16 @@ export const ko: TranslationMap = {
   },
   login: {
     subtitle: "Gateway 대시보드",
+    deviceAuthMigration: {
+      banner: "업데이트 후에도 이 브라우저는 일회성 기기 승인이 필요합니다.",
+      action: "이 브라우저 보안 설정",
+      secureContextRequired:
+        "이 레거시 브라우저는 일시적으로 계속 사용할 수 있습니다. HTTPS 또는 localhost로 다시 열어 기기 ID로 보안을 설정하세요.",
+      pendingUnavailable:
+        "브라우저 페어링 요청을 아직 사용할 수 없습니다. 잠시 후 다시 시도하세요.",
+      loadFailed: "이 브라우저의 페어링 요청을 불러올 수 없습니다: {error}",
+      approvalFailed: "이 브라우저의 보안을 설정할 수 없습니다: {error}",
+    },
     passwordPlaceholder: "선택 사항",
     showToken: "토큰 표시",
     hideToken: "토큰 숨기기",
@@ -3783,6 +3796,19 @@ export const ko: TranslationMap = {
     },
     outputTokens: "출력 토큰 {count}개",
     archivedSessionDisabled: "메시지를 보내려면 이 세션을 복원하세요.",
+    sessionSharing: {
+      menu: "스레드 공유",
+      current: "스레드 표시 범위: {visibility}",
+      visibility: "표시 범위",
+      shared: "공유됨",
+      readOnly: "읽기 전용",
+      suggest: "제안",
+      draft: "초안",
+      members: "멤버",
+      selected: "멤버",
+      noPeople: "페어링된 사용자를 찾을 수 없습니다.",
+      readOnlyNotice: "스레드 소유자와 멤버만 이 스레드에서 작업할 수 있습니다.",
+    },
     loadOlder: "이전 항목 불러오기",
     sessionHeader: {
       renameTooltip: "세션 이름 변경",
@@ -4085,6 +4111,7 @@ export const ko: TranslationMap = {
       openInCanvas: "캔버스에서 열기",
       reply: "답장",
       replyToMessage: "메시지에 답장",
+      replyingTo: "{name}에게 답장 중",
       rewind: "되감기",
       rewindConfirm: "이 메시지 이전으로 되감을까요?",
       rewindToHere: "여기까지 되감기",
@@ -4182,6 +4209,7 @@ export const ko: TranslationMap = {
       placeholderWithAttachments: "Add a message or paste more images...",
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint: "오프라인 — 메시지는 대기열에 저장되며 연결이 복구되면 전송됩니다.",
+      offlineQueuedHint: "오프라인 — {count}개 대기 중, 연결이 복구되면 메시지가 전송됩니다.",
       preparingModel: "모델 준비 중...",
       responding: "{name}이(가) 응답하는 중...",
       sendingMessage: "메시지 전송 중...",

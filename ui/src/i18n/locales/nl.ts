@@ -680,6 +680,8 @@ export const nl: TranslationMap = {
     openWorkboardCard: "Workboard-kaart openen",
     dashboardAvailable: "Dashboard beschikbaar",
     approvalNeeded: "Goedkeuring vereist",
+    queuedMessage: "{count} bericht in wachtrij om te verzenden",
+    queuedMessages: "{count} berichten in wachtrij om te verzenden",
     noSessions: "Geen sessies gevonden.",
     noActiveSessions: "Geen actieve threads.",
     noArchivedSessions: "Geen gearchiveerde sessies.",
@@ -3045,6 +3047,7 @@ export const nl: TranslationMap = {
     eventStale: "Verlopen sessie",
   },
   connection: {
+    queuedCount: "{count} in wachtrij",
     reconnecting: "Opnieuw verbinden…",
     retryNow: "Nu opnieuw proberen",
     access: {
@@ -3716,6 +3719,16 @@ export const nl: TranslationMap = {
   },
   login: {
     subtitle: "Gateway-dashboard",
+    deviceAuthMigration: {
+      banner: "Deze browser heeft na de update nog eenmalige apparaatgoedkeuring nodig.",
+      action: "Deze browser beveiligen",
+      secureContextRequired:
+        "Deze verouderde browser blijft tijdelijk beschikbaar. Open hem opnieuw via HTTPS of localhost om hem te beveiligen met apparaatidentiteit.",
+      pendingUnavailable:
+        "Het koppelingsverzoek van de browser is nog niet beschikbaar. Probeer het zo meteen opnieuw.",
+      loadFailed: "Kon het koppelingsverzoek van deze browser niet laden: {error}",
+      approvalFailed: "Kon deze browser niet beveiligen: {error}",
+    },
     passwordPlaceholder: "optioneel",
     showToken: "Token weergeven",
     hideToken: "Token verbergen",
@@ -3827,6 +3840,19 @@ export const nl: TranslationMap = {
     },
     outputTokens: "{count} uitvoertokens",
     archivedSessionDisabled: "Herstel deze sessie om berichten te verzenden.",
+    sessionSharing: {
+      menu: "Thread delen",
+      current: "Threadzichtbaarheid: {visibility}",
+      visibility: "Zichtbaarheid",
+      shared: "Gedeeld",
+      readOnly: "Alleen-lezen",
+      suggest: "Voorstellen",
+      draft: "Concept",
+      members: "Leden",
+      selected: "Lid",
+      noPeople: "Geen gekoppelde personen gevonden.",
+      readOnlyNotice: "Alleen de eigenaar en leden van de thread kunnen in deze thread handelen.",
+    },
     loadOlder: "Oudere laden",
     sessionHeader: {
       renameTooltip: "Sessie hernoemen",
@@ -4130,6 +4156,7 @@ export const nl: TranslationMap = {
       openInCanvas: "Openen in canvas",
       reply: "Beantwoorden",
       replyToMessage: "Op bericht reageren",
+      replyingTo: "Antwoorden aan {name}",
       rewind: "Terugspoelen",
       rewindConfirm: "Terugspoelen naar voor dit bericht?",
       rewindToHere: "Naar hier terugspoelen",
@@ -4228,6 +4255,8 @@ export const nl: TranslationMap = {
       placeholderDisconnected: "Connect to the gateway to start chatting...",
       offlineHint:
         "Offline — berichten worden in de wachtrij geplaatst en verzonden zodra de verbinding terugkeert.",
+      offlineQueuedHint:
+        "Offline — {count} in wachtrij; berichten worden verzonden zodra de verbinding terugkeert.",
       preparingModel: "Model voorbereiden...",
       responding: "{name} reageert...",
       sendingMessage: "Bericht verzenden...",

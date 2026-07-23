@@ -645,6 +645,8 @@ export const zh_CN: TranslationMap = {
     openWorkboardCard: "打开 Workboard 卡片",
     dashboardAvailable: "仪表板可用",
     approvalNeeded: "需要审批",
+    queuedMessage: "{count} 条消息已加入发送队列",
+    queuedMessages: "{count} 条消息已加入发送队列",
     noSessions: "未找到会话。",
     noActiveSessions: "没有活动会话。",
     noArchivedSessions: "没有已归档会话。",
@@ -2952,6 +2954,7 @@ export const zh_CN: TranslationMap = {
     eventStale: "过期会话",
   },
   connection: {
+    queuedCount: "{count} 条排队中",
     reconnecting: "正在重新连接…",
     retryNow: "立即重试",
     access: {
@@ -3610,6 +3613,15 @@ export const zh_CN: TranslationMap = {
   },
   login: {
     subtitle: "网关仪表盘",
+    deviceAuthMigration: {
+      banner: "更新后，此浏览器仍需进行一次性设备批准。",
+      action: "保护此浏览器",
+      secureContextRequired:
+        "此旧版浏览器暂时仍可使用。请通过 HTTPS 或 localhost 重新打开，以使用设备身份进行保护。",
+      pendingUnavailable: "浏览器配对请求尚不可用。请稍后重试。",
+      loadFailed: "无法加载此浏览器的配对请求：{error}",
+      approvalFailed: "无法保护此浏览器：{error}",
+    },
     passwordPlaceholder: "可选",
     showToken: "显示令牌",
     hideToken: "隐藏令牌",
@@ -3700,6 +3712,19 @@ export const zh_CN: TranslationMap = {
     },
     outputTokens: "{count} 个输出令牌",
     archivedSessionDisabled: "恢复此会话以发送消息。",
+    sessionSharing: {
+      menu: "线程共享",
+      current: "线程可见性：{visibility}",
+      visibility: "可见性",
+      shared: "已共享",
+      readOnly: "只读",
+      suggest: "建议",
+      draft: "草稿",
+      members: "成员",
+      selected: "成员",
+      noPeople: "未找到已配对的人员。",
+      readOnlyNotice: "只有线程所有者和成员才能在此线程中操作。",
+    },
     loadOlder: "加载更早内容",
     sessionHeader: {
       renameTooltip: "重命名会话",
@@ -3999,6 +4024,7 @@ export const zh_CN: TranslationMap = {
       openInCanvas: "在画布中打开",
       reply: "回复",
       replyToMessage: "回复消息",
+      replyingTo: "正在回复 {name}",
       rewind: "回退",
       rewindConfirm: "回退到此消息之前？",
       rewindToHere: "回退到此处",
@@ -4096,6 +4122,7 @@ export const zh_CN: TranslationMap = {
       placeholderWithAttachments: "添加消息或继续粘贴图片...",
       placeholderDisconnected: "连接到 Gateway 后开始聊天...",
       offlineHint: "离线 — 消息将排队，连接恢复后发送。",
+      offlineQueuedHint: "离线——已排队 {count} 条；连接恢复后消息将发送。",
       preparingModel: "正在准备模型...",
       responding: "{name} 正在回复...",
       sendingMessage: "正在发送消息...",
